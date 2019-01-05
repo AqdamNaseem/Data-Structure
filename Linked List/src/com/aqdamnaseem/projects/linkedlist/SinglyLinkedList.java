@@ -18,7 +18,7 @@ public class SinglyLinkedList<Item> implements Iterable<Item> {
 	 * 
 	 * @param item
 	 */
-	public void insertFirst(Item item) {
+	public void addFirst(Item item) {
 		head = new Node<Item>(item, head);
 		size++;
 	}
@@ -28,7 +28,7 @@ public class SinglyLinkedList<Item> implements Iterable<Item> {
 	 * 
 	 * @param item
 	 */
-	public void insertLast(Item item) {
+	public void addLast(Item item) {
 		if (head == null)
 			// list is empty
 			head = new Node<Item>(item, null);
@@ -50,7 +50,7 @@ public class SinglyLinkedList<Item> implements Iterable<Item> {
 	 * @param item
 	 * @param itemToInsert
 	 */
-	public void insertAfter(Item item, Item itemToInsert) {
+	public void addAfter(Item item, Item itemToInsert) {
 		if (head == null)
 			// list is empty
 			throw new NoSuchElementException("No such element exist " + item);
@@ -74,12 +74,12 @@ public class SinglyLinkedList<Item> implements Iterable<Item> {
 	 * @param item
 	 * @param itemToInsert
 	 */
-	public void insertBefore(Item item, Item itemToInsert) {
+	public void addBefore(Item item, Item itemToInsert) {
 		if (head == null)
 			// list is empty
 			throw new NoSuchElementException("No such element exist " + item);
 		if (head.data.equals(item))
-			insertFirst(itemToInsert);
+			addFirst(itemToInsert);
 		else {
 			Node<Item> curr = head;
 			Node<Item> prev = null;
@@ -105,7 +105,7 @@ public class SinglyLinkedList<Item> implements Iterable<Item> {
 	 * @param item
 	 * @param index
 	 */
-	public void insertAt(Item item, int index) {
+	public void addAt(Item item, int index) {
 		if (head == null)
 			// list is empty
 			throw new NoSuchElementException("No such element exist");
@@ -113,9 +113,9 @@ public class SinglyLinkedList<Item> implements Iterable<Item> {
 			throw new IllegalArgumentException("Invalid arguement " + index);
 		int counter = 0;
 		if (index == 0)
-			insertFirst(item);
+			addFirst(item);
 		else if (index == size - 1)
-			insertLast(item);
+			addLast(item);
 		else {
 			Node<Item> curr = head;
 			Node<Item> prev = null;
@@ -136,7 +136,7 @@ public class SinglyLinkedList<Item> implements Iterable<Item> {
 	 * 
 	 * @return
 	 */
-	public Item deleteFirst() {
+	public Item removeFirst() {
 		if (head == null)
 			throw new NoSuchElementException("No such element exist");
 		Item item = head.data;
@@ -149,7 +149,7 @@ public class SinglyLinkedList<Item> implements Iterable<Item> {
 	 * 
 	 * @return
 	 */
-	public Item deleteLast() {
+	public Item removeLast() {
 		Item item = null;
 		if (head == null)
 			throw new NoSuchElementException("No such element exist");
@@ -180,11 +180,11 @@ public class SinglyLinkedList<Item> implements Iterable<Item> {
 	 * 
 	 * @param item
 	 */
-	public void delete(Item item) {
+	public void remove(Item item) {
 		if (head == null)
 			throw new NoSuchElementException("No such element exist " + item);
 		if (head.data.equals(item))
-			deleteFirst();
+			removeFirst();
 		else {
 			Node<Item> curr = head;
 			Node<Item> prev = null;
@@ -206,16 +206,16 @@ public class SinglyLinkedList<Item> implements Iterable<Item> {
 	 * @param index
 	 * @return
 	 */
-	public Item deleteAt(int index) {
+	public Item removeAt(int index) {
 		Item item = null;
 		if (head == null)
 			throw new NoSuchElementException("No such element exist");
 		if (index < 0 || index >= size)
 			throw new IllegalArgumentException("Invalid arguement " + index);
 		if (index == 0)
-			item = deleteFirst();
+			item = removeFirst();
 		else if (index == size - 1) {
-			item = deleteLast();
+			item = removeLast();
 		} else {
 			int counter = 0;
 			Node<Item> curr = head;
@@ -362,17 +362,17 @@ public class SinglyLinkedList<Item> implements Iterable<Item> {
 
 	public static void main(String[] args) {
 		SinglyLinkedList<String> linkedList = new SinglyLinkedList<>();
-		linkedList.insertFirst("A");
-		linkedList.insertAfter("A", "C");
-		linkedList.insertBefore("C", "B");
-		linkedList.insertAt("D", 2);
-		linkedList.insertLast("E");
+		linkedList.addFirst("A");
+		linkedList.addAfter("A", "C");
+		linkedList.addBefore("C", "B");
+		linkedList.addAt("D", 2);
+		linkedList.addLast("E");
 		System.out.println(linkedList.toString());// print A B C D E
 		System.out.println(linkedList.get(4));// print E
-		System.out.println(linkedList.deleteFirst());// print A
-		System.out.println(linkedList.deleteLast());// print E
-		linkedList.delete("B");
-		System.out.println(linkedList.deleteAt(0)); // print C
+		System.out.println(linkedList.removeFirst());// print A
+		System.out.println(linkedList.removeLast());// print E
+		linkedList.remove("B");
+		System.out.println(linkedList.removeAt(0)); // print C
 		System.out.println(linkedList.size);// print 1
 		System.out.println(linkedList.isEmpty());// print false
 		linkedList.clear();
