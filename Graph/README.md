@@ -1,10 +1,10 @@
-Graph
+## Graph
 -----
 A Graph is a set of vertices and a collection of edges that each connect a pair of vertices. We use the names 0 through V-1 for the vertices in a V-vertex graph.
 
 ![alt text](https://github.com/AqdamNaseem/Data-Structure/blob/master/Graph/images/Graph.png)
 
-Graph Terminology
+## Graph Terminology
 -----------------
 1. When an edge connects two vertices, we say that the vertices are adjacent to each other and the edge is incident on both vertices
 
@@ -34,15 +34,15 @@ Graph Terminology
 
 14. A Graph is dense if it has many edges(n(n-1)/2 edges for a complete Graph which has n vertices).
 
-Graph Representation
+## Graph Representation
 --------------------
 A Graph can be represented in different ways.
 
-1. Array of Edges :
+#### Array of Edges
 
 Here we maintain an array of edges which exist between vertices.This direct representation is simple but finding adjacent vertices for a given vertex will require to examine each and every edge in the array.
 
-2. Adjacency Matrix
+#### Adjacency Matrix
 
 Here we maintain a V by V boolean array, with the entry in row v and column w defined to be true if there is an edge adjacent 0 to both vertex v and vertex w in the graph, and to be false otherwise. 
 
@@ -50,7 +50,7 @@ Here we maintain a V by V boolean array, with the entry in row v and column w de
 
 Graphs with millions of vertices are common and the space cost with this representation for the v^2 boolean values needed is prohibitive.
 
-3. Array of Adjacency List
+#### Array of Adjacency List
 
 Here we maintain a vertex-indexed array of lists of the vertices adjacent to each vertex
 
