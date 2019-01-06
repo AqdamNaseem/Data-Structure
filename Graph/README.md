@@ -1,11 +1,11 @@
 ## Graph
------
+
 A Graph is a set of vertices and a collection of edges that each connect a pair of vertices. We use the names 0 through V-1 for the vertices in a V-vertex graph.
 
 ![alt text](https://github.com/AqdamNaseem/Data-Structure/blob/master/Graph/images/Graph.png)
 
 ## Graph Terminology
------------------
+
 1. When an edge connects two vertices, we say that the vertices are adjacent to each other and the edge is incident on both vertices
 
 2. The degree of a vertex is the no. of edges incident on it.
@@ -35,7 +35,7 @@ A Graph is a set of vertices and a collection of edges that each connect a pair 
 14. A Graph is dense if it has many edges(n(n-1)/2 edges for a complete Graph which has n vertices).
 
 ## Graph Representation
---------------------
+
 A Graph can be represented in different ways.
 
 #### Array of Edges
