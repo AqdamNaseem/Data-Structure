@@ -52,6 +52,14 @@ Graphs with millions of vertices are common and the space cost with this represe
 
 #### Array of Adjacency List
 
-Here we maintain a vertex-indexed array of lists of the vertices adjacent to each vertex
+Here we maintain a vertex-indexed array of (Linked) lists of the vertices adjacent to each vertex
 
 ![alt text](https://github.com/AqdamNaseem/Data-Structure/blob/master/Graph/images/Adjacency_List.png)
+
+#### Array of Adjacency Set
+
+Here we maintain a vertex-indexed array of HashSet of the vertices adjacent to each vertex
+
+#### Comparison
+
+![alt text](https://github.com/AqdamNaseem/Data-Structure/blob/master/Graph/images/Comparison_Graph_Representation.png)
