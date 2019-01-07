@@ -19,7 +19,21 @@ Each recursive call will add a new frame to the stack memory of the JVM. So, if 
 recursive call can dive, an out of memory exception may occur.Thus this approach is not suitable for list with large no of 
 elements.
 
-The stop condition here, will be reaching linked list end.
+The stop condition in this case is reaching the end of linked list.
+
+PseudoCode :
+                function reverse(Node head)
+                  if head is null
+                        return null
+                  if head.next is null
+                        head = node
+                  		return node
+                  		
+                  reverse = reverse(head.next)
+                  reverse.next = head
+                  head.next = null
+                  return head
+
 
 Time Complexity : O(N)
 
@@ -46,6 +60,20 @@ Space Complxity : O(1)
 2.Iterative Approach
 --------------------
 This approach makes use of 3 pointers prev, curr, next to reverse linked list.
+
+PseudoCode :  
+				reverse(Node node)
+					if node.null OR node.next is null
+				  	return node
+				  	curr =  head
+				  	prev = null
+				  	next = null
+				  while curr is not null
+				  	next = curr.next
+				  	prev = curr
+				  	curr = next
+				 return prev
+				  
 
 Time Complexity : O(N)
 Space Complxity : O(1)
