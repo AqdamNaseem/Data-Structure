@@ -1,4 +1,6 @@
-## Check and Remove if a Linked List has a loop. There are other parts to this problem like finding the loop and then finding the starting node of the loop.
+## Check and Remove if a Linked List has a loop.
+
+There are other parts to this problem like finding the loop and then finding the starting node of the loop.
 
 We will solve this problem using Floyd's Cycle Detection Algorithm (https://en.wikipedia.org/wiki/Cycle_detection#Floyd's_Tortoise_and_Hare)
 
