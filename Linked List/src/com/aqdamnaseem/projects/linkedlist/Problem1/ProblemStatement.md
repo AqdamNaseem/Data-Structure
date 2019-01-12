@@ -51,7 +51,7 @@ Time Complexity : O(N)<br />
 Space Complxity : O(1)
 
 
-### Using an Stack
+### Using Stack explicitly
 
 We can store the elements of the list on a Stack and then pop elements one by one.Since Stack is a LIFO(Last In First Out) 
 data structure, the pop order will be like iterating linked list elements in reverse order.
