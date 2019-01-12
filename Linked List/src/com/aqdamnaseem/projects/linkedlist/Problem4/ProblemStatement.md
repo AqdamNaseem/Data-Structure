@@ -1,4 +1,4 @@
-Reverse Linked List in blocks of k
+## Reverse Linked List in blocks of k
 
 Variation 1 :
  
@@ -36,7 +36,7 @@ Output :  4 5 6 7 3 2 1
 In both the cases the first block of the resulting list should be maximal with regards to k and last block may contain 
 full or lesser elements.
 
-Solution for Variation 1 :
+## Solution for Variation 1 :
 
 Simply reverse the linked list like we did in Problem 1 but keep a counter on the no of elements reversed.As soon as the 
 couter reaches the block size , check if list has sufficient element left for reversing in block(or check if list has element 
@@ -47,7 +47,7 @@ Time Complexity  : O (N)
 Space Complexity : O (1)
 
 
-Solution for Variation 2 :
+## Solution for Variation 2 :
 
 Simply reverse the complete linked list and use solution for variation 1.
 
