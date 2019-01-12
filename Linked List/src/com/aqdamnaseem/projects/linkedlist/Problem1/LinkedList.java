@@ -4,6 +4,8 @@ public class LinkedList {
 
 	private Node head;
 
+	// Alogorithm supporting methods
+
 	/**
 	 * Recursive approach to reverse a linked list
 	 */
@@ -48,10 +50,20 @@ public class LinkedList {
 		head = prev;
 	}
 
+	// API methods
+
+	/**
+	 * Add element to the front of list
+	 * 
+	 * @param data
+	 */
 	public void add(Integer data) {
 		head = new Node(data, head);
 	}
 
+	/**
+	 * Print Linked List element
+	 */
 	public String toString() {
 		StringBuffer result = new StringBuffer();
 		Node curr = head;
