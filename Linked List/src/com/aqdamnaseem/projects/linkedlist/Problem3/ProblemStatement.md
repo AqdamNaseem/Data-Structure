@@ -1,6 +1,4 @@
-Find the intersection point of two Linked List
-
-Again there are many solutions to this problem.We will see some of them here
+## Find intersection point of two Linked Lists
 
 Before jumping to the solution, Lets analyze the problem.
 
@@ -22,18 +20,23 @@ otherwise Floyd's algorithm will give one of the entry points.
 
 Lets summarize all the scenarios
 
-Scenraio 1: When lists are null terminating  and do not intersect i.e disjoint lists.
+##### Scenraio 1: 
+When lists are null terminating  and do not intersect i.e disjoint lists.
 
-Scenraio 2: When lists are null terminating  and intersect.
+##### Scenraio 2: 
+When lists are null terminating  and intersect.
  
-Scenraio 3: When lists are circular and donot intersect(or donot have common loop), again disjoint list.
+##### Scenraio 3: 
+When lists are circular and donot intersect(or donot have common loop), again disjoint list.
 
-Scenraio 4: When lists are circular and are sharing common loop but they merge before starting of the loop.
+##### Scenraio 4: 
+When lists are circular and are sharing common loop but they merge before starting of the loop.
 
-Scenraio 5: When lists are circular and are sharing common loop but they merge at the starting node of the loop(or have 
-common entry point to the loop)
+##### Scenraio 5: 
+When lists are circular and are sharing common loop but they merge at the starting node of the loop(or have common entry point to the loop)
 
-Scenraio 6: When lists are circular and are sharing common loop but they join loop at differentnode(or have different
+##### Scenraio 6: 
+When lists are circular and are sharing common loop but they join loop at differentnode(or have different
 entry point to the loop).As mentioned there are two solutions in such case and either of the entry point is correct answer
 
 
