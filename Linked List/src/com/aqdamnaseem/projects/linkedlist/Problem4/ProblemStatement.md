@@ -43,7 +43,7 @@ couter reaches the block size , check if list has sufficient element left for re
 and call reverse function if you simply want to reverse remaining elements), if yes recursively call the reverse function on 
 the remaining element.
 
-Time Complexity  : O (N)
+Time Complexity  : O (N)<br />
 Space Complexity : O (1)
 
 
@@ -51,5 +51,5 @@ Space Complexity : O (1)
 
 Simply reverse the complete linked list and use solution for variation 1.
 
-Time Complexity  : O (N) +  O (N) = O (N)
+Time Complexity  : O (N) +  O (N) = O (N)<br />
 Space Complexity : O (1)
