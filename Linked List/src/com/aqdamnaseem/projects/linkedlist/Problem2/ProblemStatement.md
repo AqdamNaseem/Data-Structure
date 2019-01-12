@@ -28,8 +28,8 @@ If there is no loop then B will reach the end of track and algorithm ends.
 Have two pointers, classically called hare and tortoise. Move hare by 2 steps and tortoise by 1. If they meet at some point,
 then there is surely a cycle and the meeting point is inside the cycle.
 
-Time Complexity  : O (N)
-Space Complexity : O (1)
+Time Complexity  : O (N)<br />
+Space Complexity : O (1)<br />
 
 ### Find the start of cycle
 
@@ -69,15 +69,15 @@ Suppose p is the starting node of linked list,q is the firstnode of loop and r i
 
 Therefore if we keep one pointer(A) at start node of the linked list and other one(B) at the meeting point and keep moving them by same speed, they will meet at the starting node of loop
 
-Time Complexity  : O (N)
-Space Complexity : O (1)
+Time Complexity  : O (N)<br />
+Space Complexity : O (1)<br />
 
 ### Finding the length of Loop
 
 Keep one pointer fixed at the meeting point while increment the other until they are same again. Increment a counter as you go along and the counter value at meet will be the length of cycle.
 
-Time Complexity  : O (N)
-Space Complexity : O (1)
+Time Complexity  : O (N)<br />
+Space Complexity : O (1)<br />
 
 ### Removing Loop
 
@@ -85,8 +85,8 @@ Keep one pointer fixed at the meeting point while increment the other until you 
 
 That node is last node of the loop. Set the next pointer of that node to null
 
-Time Complexity  : O (N)
-Space Complexity : O (1)
+Time Complexity  : O (N)<br />
+Space Complexity : O (1)<br />
 
 ### Time Complexity Analysis
 
