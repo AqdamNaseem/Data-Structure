@@ -81,15 +81,11 @@ Suppose p is the starting node of linked list,q is the firstnode of loop and r i
 
 			where k is the number of rounds fast pointer go through before meeting
 
-			also, distance travlled by fast = 2 * distance travelled by slow  
-
+			also, distance travlled by fast = 2 * distance travelled by slow 
+			
 				       2* (x+y) = k* (y+z) +y
-
 				       x = k* (y+z)-y
-
 				       x = k * (loop length) - y 
-
- 		
 
 Therefore if we keep one pointer(A) at start node of the linked list and other one(B) at the meeting point and keep moving them by same speed, they will meet at the starting node of loop
 
