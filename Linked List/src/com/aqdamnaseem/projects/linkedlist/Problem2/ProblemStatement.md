@@ -28,26 +28,6 @@ If there is no loop then B will reach the end of track and algorithm ends.
 Have two pointers, classically called hare and tortoise. Move hare by 2 steps and tortoise by 1. If they meet at some point,
 then there is surely a cycle and the meeting point is inside the cycle.
 
-Pseudo code:
-
-			boolean hasCycle(Node head)
-
-			{
-			    if (head is null)
-				return null
-
-			    Node slow = head;
-			    Node fast = head;
-
-			    while (slow is not null AND fast is not null AND fast.next is not null) {
-				slow = slow.next
-				fast = fast.next.next
-				if (slow is equal to fast)
-				    return true
-
-			    }
-			}
-
 Time Complexity  : O (N)
 Space Complexity : O (1)
 
@@ -89,40 +69,12 @@ Suppose p is the starting node of linked list,q is the firstnode of loop and r i
 
 Therefore if we keep one pointer(A) at start node of the linked list and other one(B) at the meeting point and keep moving them by same speed, they will meet at the starting node of loop
 
-Pseudo code:    
-
-				 Node findCycleFirstNode(Node meetPointPtr, Node head) {
-				     Node ptr1 = meetPointPtr
-				     Node ptr2 = head
-				     while (ptr1 not equal to ptr2) {
-					 ptr1 = ptr1.next
-					 ptr2 = ptr2.next
-				     }
-				     return ptr1
-
-				 }
-
 Time Complexity  : O (N)
 Space Complexity : O (1)
 
 ### Finding the length of Loop
 
 Keep one pointer fixed at the meeting point while increment the other until they are same again. Increment a counter as you go along and the counter value at meet will be the length of cycle.
-
-Pseudo code:
-
-              
-
-				int findLoopLength(Node meetPointPtr) {
-				    Node ptr1 = meetPointPtr
-				    Node ptr2 = meetPointPtr
-				    count = 0
-				    while (ptr2 not equal to ptr1) {
-					ptr2 = ptr2.next
-					count = count + 1
-				    }
-				    return ptr1
-				}
 
 Time Complexity  : O (N)
 Space Complexity : O (1)
@@ -132,17 +84,6 @@ Space Complexity : O (1)
 Keep one pointer fixed at the meeting point while increment the other until you reach a node whose next is the meeting point.
 
 That node is last node of the loop. Set the next pointer of that node to null
-
-Pseudo code:
-
-				breakLoop(Node meetPointPtr) {
-				     Node ptr1 = meetPointPtr
-				     Node ptr2 = meetPointPtr
-				     while (ptr2.next not equal to ptr1) {
-					 ptr2 = ptr2.next
-				     }
-				     ptr2.next = null
-				 }
 
 Time Complexity  : O (N)
 Space Complexity : O (1)
