@@ -12,8 +12,9 @@ The important part here is that we are not using any additional node.
 ### Iterative Solution
 
 Here we take two pointers and treat one of the pointer as target pointer which points to the next smaller element of the two list.
-		Time Complexity : O(m + n) or O(max(m,n))
-		Space Complexity : O(1)
+		
+		 Time Complexity : O(m + n) or O(max(m,n))
+		 Space Complexity : O(1)
 
 
 ### Recursive Solution
