@@ -23,3 +23,13 @@ Recursive solution is very simple and compact but remember this solution can tak
    
    		Time Complexity : O(m + n) or O(max(m,n))
 		Space Complexity : O(m+n)
+
+A variation to this question is that given two linked list , merge alternate elements of the lists into a single list
+
+List1 =  1,2,3,4,5,6
+List2 = 7,8,9,10
+
+Output = 1,7,2,8,3,10,4,5,6
+
+	     Time Complexity :  O(min(m,n)) because loop will run for no of times of smaller list(as there is no condition)
+	     Space Complexity : O(1)
