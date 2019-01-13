@@ -1,4 +1,4 @@
-## Merge Two sorted(in ascending order) Linked List into a single sorted linked list without using additional node.
+## Merge Two sorted(in ascending order) Linked List into a single sorted Linked List without using additional node.
 
 For Example :
 
