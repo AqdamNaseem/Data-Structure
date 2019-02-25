@@ -16,7 +16,7 @@ Data Structures are basically implementation of ADTs.
 Linked List(as ADT)
 -------------------
 
-If we say Linked List is an ADT, then it should possess two properties defined above.So here they are
+If Linked List is an ADT, then it must possess properties of ADT described above.So here they are
 
    1. In its most basic form, Linked List is a collection of nodes, where each node contains: data, and a reference(in other        words, a link) to the next node in the sequence.
    
